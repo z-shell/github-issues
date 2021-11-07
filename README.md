@@ -1,4 +1,4 @@
-# 'GITHUB-ISSUES' ZINIT PACKAGE
+# `GITHUB-ISSUES` ZINIT PACKAGE
 
 ## Homepage link: [z-shell/zsh-github-issues](https://github.com/z-shell/zsh-github-issues)
 
