@@ -1,4 +1,4 @@
-# `GITHUB-ISSUES` ZINIT PACKAGE
+# `GITHUB-ISSUES`
 
 ## Homepage link: [z-shell/zsh-github-issues](https://github.com/z-shell/zsh-github-issues)
 
@@ -6,7 +6,7 @@
 |:-------------------:|:-------:|:----------------:|:----:|:---:|
 |     **Status:**     |    -    | + <br> (default) |  –   |  –  |
 
-[Zinit](https://github.com/z-shell/zinit) can use the NPM package registry
+[ZI](https://github.com/z-shell/zi) can use the NPM package registry
 to automatically:
 
 - get the plugin's Git repository OR release-package URL,
@@ -16,15 +16,15 @@ to automatically:
   - the ices can be selectively overriden.
   - the ices can be selectively overriden.
 
-Example Zinit invocations that'll install
+Example ZI invocations that'll install
 [z-shell/zsh-github-issues](https://github.com/z-shell/zsh-github-issues):
 
 ```zsh
 # Download the default profile. Need the `@' prefix because of the `git' ice.
-zinit pack for @github-issues
+zi pack for @github-issues
 
 # Download the `compact-message' profile
-zinit pack"compact-message" for @github-issues
+zi pack"compact-message" for @github-issues
 ```
 
 ## Default Profile
@@ -32,7 +32,7 @@ zinit pack"compact-message" for @github-issues
 The Zinit command executed will be equivalent to:
 
 ```zsh
-zinit lucid id-as"GitHub-notify" \
+zi lucid id-as"GitHub-notify" \
  on-update-of'~/.cache/zsh-github-issues/new_titles.log' \
  notify'New issue: $NOTIFY_MESSAGE' for \
     z-shell/zsh-github-issues
@@ -45,7 +45,7 @@ Will emit the notification message without `New issue: ` prefix.
 The Zinit command executed will be equivalent to:
 
 ```zsh
-zinit lucid id-as"GitHub-notify" \
+zi lucid id-as"GitHub-notify" \
  on-update-of'~/.cache/zsh-github-issues/new_titles.log' \
  notify'$NOTIFY_MESSAGE' for \
     z-shell/zsh-github-issues
